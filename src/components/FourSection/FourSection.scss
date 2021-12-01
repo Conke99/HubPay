@@ -1,0 +1,185 @@
+.Four {
+  width: 100%;
+  height: 882px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .avatar__One {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .avatar__Two {
+    position: absolute;
+    top: 30%;
+    right: 0;
+  }
+  .avatar__Three {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .Questions {
+    position: absolute;
+    top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      font-weight: 600;
+      font-size: 44px;
+      line-height: 61px;
+      text-align: center;
+    }
+    p {
+      font-size: 18px;
+      line-height: 36px;
+      opacity: 0.51;
+      text-align: center;
+      margin-top: 40px;
+      width: 477px;
+      height: 72px;
+    }
+    .Question__Choices {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 50px;
+      .Question__One {
+        width: 790px;
+        max-height: 180px;
+        .question-submenu {
+          width: 692px;
+          margin: 20px;
+          animation: slideDown 500ms ease-in-out forwards;
+        }
+        .question-submenu.clicked {
+          display: none;
+        }
+
+        .border__bottom {
+          width: 790px;
+          border-bottom: 2px solid #393939;
+          opacity: 0.08;
+          margin-top: 50px;
+        }
+        .Question__One__content {
+          display: flex;
+          flex-direction: row;
+          position: relative;
+          align-items: center;
+          cursor: pointer;
+          div {
+            width: 10px;
+            height: 10px;
+            background: $purple;
+            border-radius: 20px;
+          }
+          h3 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 36px;
+            margin-left: 20px;
+          }
+          img {
+            position: absolute;
+            right: 0;
+          }
+        }
+      }
+      .Question__One.closed {
+        max-height: 0;
+      }
+
+      .Question__Two {
+        width: 790px;
+
+        .question-submenu {
+          width: 692px;
+          margin: 20px;
+          animation: slideDown 500ms ease-in-out forwards;
+        }
+        .question-submenu.clicked {
+          display: none;
+        }
+        .border__bottom {
+          width: 790px;
+          border-bottom: 2px solid #393939;
+          opacity: 0.08;
+          margin-top: 50px;
+        }
+        .Question__Two__content {
+          display: flex;
+          flex-direction: row;
+          position: relative;
+          align-items: center;
+          cursor: pointer;
+          div {
+            width: 10px;
+            height: 10px;
+            background: $purple;
+            border-radius: 20px;
+          }
+          h3 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 36px;
+            margin-left: 20px;
+          }
+          img {
+            position: absolute;
+            right: 0;
+          }
+        }
+      }
+      .Question__Three {
+        width: 790px;
+        .question-submenu {
+          width: 692px;
+          margin: 20px;
+          animation: slideDown 500ms ease-in-out forwards;
+        }
+        .question-submenu.clicked {
+          display: none;
+        }
+        .Question__Three__content {
+          display: flex;
+          flex-direction: row;
+          position: relative;
+          align-items: center;
+          cursor: pointer;
+          div {
+            width: 10px;
+            height: 10px;
+            background: $purple;
+            border-radius: 20px;
+          }
+          h3 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 36px;
+            margin-left: 20px;
+          }
+          img {
+            position: absolute;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-40px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

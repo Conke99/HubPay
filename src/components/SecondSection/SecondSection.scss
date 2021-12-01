@@ -1,0 +1,120 @@
+.Second {
+  margin-top: 150px;
+  height: 564px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .Section__two_content {
+    width: 80%;
+    .Section__two_top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .Section__two_left {
+        height: 150px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h2 {
+          font-size: 40px;
+          font-weight: 600;
+        }
+        p {
+          font-size: 18px;
+          opacity: 51%;
+        }
+      }
+      .Section__two_right {
+        width: 50%;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        .Stars {
+          width: 60%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        p {
+          font-size: 25px;
+          span {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  .Section__two_bottom {
+    margin-top: 100px;
+    width: 100%;
+    height: 293px;
+    .items {
+      cursor: pointer;
+      // margin-left: 475px;
+      height: 221px;
+      width: 379px;
+      background-color: $white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      h3 {
+        margin-left: 32px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 36px;
+        color: $lightDarkBlue;
+        width: 315px;
+        height: 71px;
+      }
+      .small_stars {
+        margin-left: 32px;
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        img {
+          width: 17.12px;
+          height: 16.28px;
+        }
+      }
+      p {
+        margin-left: 32px;
+        width: 150px;
+        height: 24px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        color: $lightDarkBlue;
+        opacity: 0.71;
+      }
+    }
+    .items:hover {
+      animation: glow 1s;
+      -webkit-box-shadow: 0 0 130px $white;
+      box-shadow: 0 0 130px $white;
+      background-color: $purple;
+      h3 {
+        color: $white;
+      }
+      p {
+        color: $white;
+      }
+    }
+  }
+}
+
+@keyframes glow {
+  0% {
+    background-color: $white;
+  }
+  100% {
+    background-color: $purple;
+  }
+}

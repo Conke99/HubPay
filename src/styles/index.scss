@@ -1,0 +1,16 @@
+// RESET
+@import "reset";
+@import "./colors";
+
+//FONTS
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+@import "../App.scss";
+@import "../components/header/Header.scss";
+@import "../components/FirstSection/FirstSection.scss";
+@import "../components/SecondSection/SecondSection.scss";
+@import "../components/ThirdSection/ThirdSection.scss";
+@import "../components/ThirdSection/mobile/Mobile.scss";
+@import "../components/FourSection/FourSection.scss";
+@import "../components/FiveSection/FiveSection.scss";
+@import "./responsiveness.scss";

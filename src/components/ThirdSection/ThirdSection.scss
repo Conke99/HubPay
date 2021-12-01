@@ -1,0 +1,85 @@
+.Third {
+  width: 100%;
+  height: 882px;
+  display: flex;
+  justify-content: center;
+  .Third__section_content {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    .Third__section_left {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      h2 {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 62px;
+        color: $darkerBlue;
+      }
+      p {
+        font-size: 18px;
+        line-height: 36px;
+        color: $darkerBlue;
+        opacity: 0.51;
+      }
+      .CheckMarks {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 632px;
+        height: 133px;
+
+        .checkmark {
+          display: flex;
+          flex-direction: row;
+          span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 24px;
+            width: 24px;
+            height: 24px;
+            background-color: $purple;
+            content: "\2713";
+            color: $white;
+          }
+          h4 {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 25px;
+            color: $purple;
+            margin-left: 20px;
+            cursor: pointer;
+          }
+          h4:after {
+            content: "";
+            display: block;
+            border-top: 2px solid $purple;
+            width: 0;
+            transition: width 0.3s;
+          }
+
+          h4:hover:after {
+            width: 100%;
+          }
+        }
+      }
+      .Phone__Store {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        img {
+          cursor: pointer;
+        }
+      }
+    }
+    .Third__section_right {
+      width: 50%;
+      @import "./mobile/Mobile.scss";
+    }
+  }
+}
